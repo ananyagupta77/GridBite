@@ -1,0 +1,99 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Soft cream background */
+    color: #450920; /* Dark maroon text for contrast */
+}
+
+/* Main Container */
+.container {
+    margin: 20px auto;
+    width: 300px;
+}
+
+/* Header Styling */
+h1 {
+    color: #a53860; /* Deep red for the header */
+    font-size: 28px;
+}
+
+/* Options Buttons */
+.options {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffa5ab; /* Bright pink buttons */
+    color: #450920; /* Dark maroon for button text */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #da627d; /* Muted red on hover */
+    transform: scale(1.05);
+}
+
+/* Game Board Styling */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffa5ab; /* Bright pink cell background */
+    color: white; /* Dark maroon text for X/O */
+    border: 1px solid #da627d; /* Muted red borders */
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #da627d; /* Muted red hover effect */
+}
+
+.cell.taken {
+    cursor: not-allowed;
+    background-color: #a53860; /* Deep red for filled cells */
+}
+
+/* Reset Button */
+#resetButton {
+    background-color: #ffa5ab; /* Matches other buttons */
+    color: #450920;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#resetButton:hover {
+    background-color: #da627d; /* Hover effect */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Status Text */
+#status {
+    color: #a53860; /* Deep red for status messages */
+    font-size: 18px;
+    margin-top: 10px;
+}
