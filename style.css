@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 80px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    border: 2px,solid,black;
+    height: 300px;
+    width: 300px;
+    transition: background-color 0.3s;
+}
+.big{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+.photo{
+      height: 300px;
+      width:300px;
+}
+.container:hover{
+    background-color: #353839;
+}
+.options{
+    border: 1px,solid, black;
+    border-radius: 5px;
+    background-color: pink ;
+    height: 48px;
+    width: 83px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 450px;
+    padding-top: 50px;
+}
+.options:hover{
+    background-color: #353839;
+}
